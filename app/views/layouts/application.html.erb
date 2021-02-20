@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+
+  <title>Ubold 4.1.0</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description"/>
+  <meta content="Coderthemes" name="author"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  <%#= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  <%= stylesheet_link_tag '/css/bootstrap-saas.css', id: 'bs-default-stylesheet' %>
+  <%= stylesheet_link_tag '/css/app-saas.css', id: 'app-default-stylesheet' %>
+
+  <%= stylesheet_link_tag '/css/bootstrap-saas-dark.css', id: 'bs-dark-stylesheet' %>
+  <%= stylesheet_link_tag '/css/app-saas-dark.css', id: 'app-dark-stylesheet' %>
+
+</head>
+<body class="loading" data-layout-mode="two-column" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "sidebar": { "color": "light", "size": "default", "showuser": false}, "topbar": {"color": "light"}, "showRightSidebarOnPageLoad": true}'>
+
+<%= render 'layouts/wrapper' %><!--yield is in layouts/wrapper/content-->
+<%= render 'layouts/right_sidebar' %>
+<%= render 'layouts/rightbar_overlay' %>
+</body>
+</html>
