@@ -29,14 +29,15 @@ document.addEventListener("turbolinks:load", function () {
 
 import * as feather from 'feather-icons';
 document.addEventListener("DOMContentLoaded", function (event) {
-    require('../../../vendor/js/app')
-    require('../../../vendor/js/vendor')
+
     // Waves Effect
     const Waves = require("node-waves");
     Waves.init();
 
     // Feather Icons
     feather.replace()
+    require('../../../vendor/js/app')
+    require('../../../vendor/js/vendor')
 });
 
 // Uncomment to copy all static images under ../images to the output folder and reference

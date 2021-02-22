@@ -449,7 +449,6 @@ function ($) {
         this.config = {},
         // styles
 
-        // this.defaultBSStyle = '../vendor/css/app-saas.css'
         this.defaultBSStyle = $("#bs-default-stylesheet"),
         this.defaultAppStyle = $("#app-default-stylesheet"),
         this.darkBSStyle = $("#bs-dark-stylesheet"),
