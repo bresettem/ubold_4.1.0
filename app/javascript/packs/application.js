@@ -21,6 +21,10 @@ document.addEventListener("turbolinks:load", function () {
         $('[data-toggle="tooltip"]').tooltip()
         $('[data-toggle="popover"]').popover()
     })
+    $('.reload').click(function() {
+        console.log('clicked')
+        location.reload();
+    });
 })
 
 import * as feather from 'feather-icons';
